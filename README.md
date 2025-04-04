@@ -1,4 +1,4 @@
-# JavaScript() {
+# JavaScript ALL ADV() {
 
 *A mostly reasonable approach to JavaScript*
 ## Table of Contents
