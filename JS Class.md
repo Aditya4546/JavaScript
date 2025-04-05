@@ -636,3 +636,50 @@ string.repeat(n)
 let string = 'love'
 console.log(string.repeat(10)) // lovelovelovelovelovelovelovelovelovelove
 ```
+<br>
+
+---
+<a name="types--Bool"><a name="1.3"></a>
+[1.3](#types--Bool) **Booleans** : Booleans can be only two values: `true` or `false`. Booleans can help make decisions on which lines of code should run when certain conditions are met. In many cases, [operators](#arithmetic-operators) assist with setting the value of a Boolean and you will often notice and write variables being initialized or their values being updated with an operator.
+
+- `let myTrueBool = true`
+- `let myFalseBool = false`
+
+✅ A variable can be considered 'truthy' if it evaluates to a boolean `true`. Interestingly, in JavaScript, [all values are truthy unless defined as falsy](https://developer.mozilla.org/docs/Glossary/Truthy).
+
+---
+<a name="types--Undefined"><a name="1.4"></a>
+[1.4](#types--Bool) **Undefined** : In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+
+  ```js
+let car;    // Value is undefined, type is undefined
+```
+<br>
+
+---
+<a name="types--BigInt"><a name="1.5"></a>
+[1.5](#types--BigInt) **BigInt** : All JavaScript numbers are stored in a 64-bit floating-point format.
+JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+
+In JavaScript, all numbers are stored in a 64-bit floating-point format (IEEE 754 standard). bWith this standard, large integer cannot be exactly represented and will be rounded. Because of this, JavaScript can only safely represent integers:
+
+Up to 9007199254740991 +(253-1)
+
+and
+
+Down to -9007199254740991 -(253-1).
+
+Integer values outside this range lose precision.
+
+```js
+let x = BigInt("123456789012345678901234567890");
+```
+
+**How to Create a BigInt**
+To create a BigInt, append n to the end of an integer or call BigInt():
+
+```js
+let x = 9999999999999999;
+let y = 9999999999999999n;
+```
+
